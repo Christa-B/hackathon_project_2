@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style_home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/css/bootstrap-select.min.css"
+      integrity="sha512-mR/b5Y7FRsKqrYZou7uysnOdCIJib/7r5QeJMFvLNHNhtye3xJp1TdJVPLtetkukFn227nKpXD9OjUc09lx97Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="http://fonts.cdnfonts.com/css/moto-verse" rel="stylesheet" />
+    <link href="http://fonts.cdnfonts.com/css/hemi-head" rel="stylesheet" />
+
+    <title>Document</title>
+  </head>
+
+  <body class="body body-dark">
+    <!--NAVIGATION BAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a href="#" class="navbar-brand">NameGenerator.tech</a>
+
+        <!--NAVIGATION BAR TOGGLE BUTTON; turns navigation items into smaller button when resizing view-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data.bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--NAVIGATION BAR ITEMS-->
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#about-section" class="nav-link"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--OVERLAY TEXT/INPUT ITEMS-->
+    <div id="textbox" class="overlay overlay-expand-lg">
+      <div class="container">
+        <h2>Generate a new vibe.</h2>
+        <!--LOCATION-->
+        <form>
+          <div class="input-group">
+            <label for="your-name" class="input-label">Your name: </label>
+            <input
+              id="user-input"
+              type="text"
+              placeholder="Enter here"
+              style="padding-left: 12px"
+            />
+          </div>
+        </form>
+        <!--NAME GENERATOR BUTTON-->
+        <div class="gen-button" style="margin-bottom: 30px">
+          <button class="btn btn-1" onclick="getName()">Generate Name</button>
+        </div>
+
+        <div class="parallelogram">
+          <div id="choose-name" class="output-group">
+            <label for="new-name" class="output-label"
+              >Your new name is...</label
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--CAROUSEL/MOVING IMAGES -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://i.ibb.co/VHjMf5D/pedestrian.png"
+          class="d-block w-100"
+          alt="Slide One"
+        />
+      </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer class="text-center text-lg-start footer-dark">
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h6 class="text-uppercase text-light">
+              Why choose Name Generator?
+            </h6>
+            <p class="text-light">
+              Our site uses your name to generate unique usernames ideal for
+              anyone who frequently forgets their own, or suffer from writer's
+              block during account creation.
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h6 class="text-uppercase text-light">Contact Us</h6>
+            <p class="text-light">
+              <b>Created by:</b> &emsp;&emsp;Jonathan Cruz, Christa Baca
+            </p>
+            <p class="text-light">
+              <b>Tech support: </b> &emsp;support@namegenerator.tech
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer id="footer2oops" class="text-center text-lg-start footer-dark">
+        <h4>Thanks for visiting!</h4>
+      </footer>
+
+      <!--COPYRIGHT-->
+      <div
+        class="text-center p-3 text-light"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+      >
+        © 2022 Copyright:
+        <a class="text-light" href="https://NameGenerator.tech/"
+          >NameGenerator.tech</a
+        >
+      </div>
+    </footer>
+
+    <!--JQUERY: MUST BE INCLUDED FOR SOME FUNCTIONALITIES-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js"
+      integrity="sha512-FHZVRMUW9FsXobt+ONiix6Z0tIkxvQfxtCSirkKc5Sb4TKHmqq1dZa8DphF0XqKb3ldLu/wgMa8mT6uXiLlRlw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="choose_name.js"></script>
+  </body>
+</html>

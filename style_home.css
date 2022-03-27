@@ -1,0 +1,155 @@
+.body {
+  background-color: #5a3181;
+}
+
+.navbar {
+  background-color: #7d40af;
+  font-family: "MOTO VERSE", sans-serif;
+}
+
+div {
+  margin: auto;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 10;
+  top: 30%;
+  width: 100%;
+  text-align: left;
+  border-radius: 0;
+  margin: auto;
+}
+
+.overlay h2 {
+  font-family: "Hemi Head", sans-serif;
+  color: white;
+  font-size: 50px;
+  font-weight: 120px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin: auto;
+}
+
+.gen-button {
+  background-color: #fa8334;
+  border-radius: 4px;
+  width: 300px;
+  margin-left: 410px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 2px 18px -3px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.4;
+  padding-bottom: 56.25%;
+  margin: auto;
+}
+
+.footer {
+  text-align: right;
+  position: absolute;
+  padding-top: 20px;
+}
+
+* {
+  /*border-radius: 0 !important;*/
+  outline: none;
+  border-inline-color: none;
+}
+
+input {
+  border-width: 1px;
+  border-color: lightgrey;
+  width: 400px;
+  margin: auto;
+  border-radius: 0;
+}
+
+input,
+select {
+  height: 38px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: auto;
+  border-radius: 0;
+}
+
+.input-group {
+  margin: auto;
+  padding-top: 10px;
+  margin-bottom: 1.5rem;
+  border-radius: 0;
+}
+
+form {
+  margin-left: 257px;
+}
+
+.input-label {
+  margin-right: 20px;
+  margin-top: 10px;
+  display: block;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+h6 {
+  font-family: "MOTO VERSE", sans-serif;
+  margin-bottom: 15px;
+}
+
+.container {
+  margin: auto;
+  padding: auto;
+}
+
+button {
+  width: 300px;
+}
+
+button:hover {
+  background-color: #4fffd3;
+  color: rgb(0, 0, 0) !important;
+}
+
+#choose-name {
+  font-family: "Hemi Head", sans-serif;
+  color: rgb(255, 224, 85);
+  margin: auto !important;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#output-group {
+  margin: auto !important;
+}
+
+.parallelogram {
+  width: 300px;
+  height: 50px;
+  transform: skew(20deg);
+  background: rgba(0, 0, 0, 0.349);
+}
+
+#footer2oops h4 {
+  font-family: "MOTO VERSE", sans-serif;
+  color: #fa8334;
+  padding-bottom: 10px;
+  align-self: center;
+  text-align: center;
+}
