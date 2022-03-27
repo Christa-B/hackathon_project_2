@@ -129,9 +129,9 @@ button:hover {
 
 #choose-name {
   font-family: "Hemi Head", sans-serif;
+  font-size: 30px;
   color: rgb(255, 224, 85);
   margin: auto !important;
-  padding-top: 10px;
   text-align: center;
 }
 
@@ -142,8 +142,7 @@ button:hover {
 .parallelogram {
   width: 300px;
   height: 50px;
-  transform: skew(20deg);
-  background: rgba(0, 0, 0, 0.349);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 #footer2oops h4 {
