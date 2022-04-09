@@ -1,7 +1,6 @@
 @font-face {
   font-family: "MOTO VERSE";
-  src: url("path/MotoVerseRegular-516oB.ttf") format("ttg"),
-    url("path/.ttf") format("truetype");
+  src: url("path/MotoVerseRegular-516oB.ttf") format("truetype");
 }
 
 .body {
