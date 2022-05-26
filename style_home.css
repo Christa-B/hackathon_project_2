@@ -1,161 +1,279 @@
+/*Initial setup for galaxy fold*/
+
 @font-face {
   font-family: "MOTO VERSE";
   src: url("path/MotoVerseRegular-516oB.ttf") format("truetype");
 }
 
-.body {
+/*Eliminate any extra margins/padding when initially building site.*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+body {
   background-color: #5a3181;
 }
 
-.navbar {
-  background-color: #7d40af;
-  font-family: "MOTO VERSE", sans-serif;
-}
-
-div {
-  margin: auto;
-}
-
-.overlay {
-  position: absolute;
-  z-index: 10;
-  top: 30%;
-  width: 100%;
-  border-radius: 0;
-  margin: auto;
-}
-
-.overlay h2 {
-  font-family: "Hemi Head", sans-serif;
-  color: white;
-  font-size: 50px;
-  font-weight: 120px;
-  padding-bottom: 10px;
-  text-align: center;
-  margin: auto;
-}
-
-.gen-button {
-  background-color: #fa8334;
-  border-radius: 4px;
-  width: 300px;
-  align-items: center;
-  text-align: center;
-  font-size: 16px;
-  box-shadow: 0 2px 18px -3px rgba(0, 0, 0, 0.2);
-}
-
-.carousel-item::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: #000;
-  opacity: 0.4;
-  padding-bottom: 56.25%;
-  margin: auto;
-}
-
-.footer {
-  text-align: right;
-  position: absolute;
-  padding-top: 20px;
-}
-
-* {
-  /*border-radius: 0 !important;*/
-  outline: none;
-  border-inline-color: none;
-}
-
-input {
-  border-width: 1px;
-  border-color: lightgrey;
-  width: 400px;
-  margin: auto;
-  border-radius: 0;
-}
-
-input,
-select {
-  height: 38px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  margin: auto;
-  border-radius: 0;
-}
-
-.input-group {
-  margin: auto;
-  padding-top: 10px;
-  margin-bottom: 1.5rem;
-  border-radius: 0;
-}
-
-form {
-  margin: auto;
-  width: 50vw;
-  text-align: center;
-}
-
-.input-label {
-  margin-right: 20px;
+.wrapper {
   margin-top: 10px;
-  display: block;
-  font-size: 1rem;
+  width: 100%;
   color: white;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+  position: absolute;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-left: 62px;
+}
+
+h1 {
+  padding-top: 35px;
+  padding-bottom: 50px;
 }
 
 h6 {
   font-family: "MOTO VERSE", sans-serif;
+  margin: auto;
+}
+
+input {
+  margin-top: 8px;
+  width: 50vw;
+  height: 25px;
   margin-bottom: 15px;
 }
 
-#overlay-items {
-  margin: auto;
-  padding: auto;
-  width: 50vw;
-}
-
 button {
-  width: 300px;
+  width: 55vw;
+  height: 35px;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 button:hover {
   background-color: #4fffd3;
   color: rgb(0, 0, 0) !important;
-}
-
-#choose-name {
-  font-family: "Hemi Head", sans-serif;
-  color: rgb(255, 224, 85);
-  margin: auto !important;
-  padding-top: 10px;
-  text-align: center;
-}
-
-#output-group {
-  margin: auto !important;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .parallelogram {
-  width: 300px;
+  width: 80vw;
   height: 50px;
-  transform: skew(20deg);
+  line-height: 50px;
+  transform: skew(-20deg);
   background: rgba(0, 0, 0, 0.349);
+  margin: auto;
+  color: white;
+  text-align: center;
 }
 
-#footer2oops h4 {
+h4 {
   font-family: "MOTO VERSE", sans-serif;
   color: #fa8334;
   padding-bottom: 10px;
   align-self: center;
   text-align: center;
+  padding-bottom: 20px;
+}
+
+footer {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  background-color: #744d99;
+  padding-top: 20px;
+}
+
+p {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: left;
+  padding-bottom: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Copyright {
+  background-color: #38204e;
+  height: 50px;
+  line-height: 50px;
+}
+
+/*Pixel 5*/
+@media only screen and (min-width: 393px) {
+  label {
+    margin-left: 85px;
+    font-size: 20px;
+  }
+
+  h1 {
+    padding-top: 45px;
+    padding-bottom: 75px;
+  }
+
+  input {
+    width: 51vw;
+  }
+
+  .parallelogram {
+    margin-top: 13px;
+    height: 90px;
+    line-height: 90px;
+    font-size: 30px;
+  }
+
+  footer {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h6 {
+    font-size: 18px;
+  }
+}
+
+/*iphone SE*/
+@media only screen and (min-width: 375px) {
+  label {
+    margin-left: 85px;
+    font-size: 20px;
+  }
+
+  h1 {
+    padding-top: 45px;
+    padding-bottom: 75px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
+
+/*samsung galazy s8+*/
+@media only screen and (min-width: 360px) {
+  label {
+    margin-left: 85px;
+    font-size: 14px;
+  }
+
+  h1 {
+    padding-top: 45px;
+    padding-bottom: 75px;
+  }
+
+  .parallelogram {
+    height: 90px;
+    line-height: 90px;
+  }
+}
+
+/*ipad air*/
+@media only screen and (min-width: 820px) {
+  label {
+    display: inline-block;
+    margin: 0 auto;
+    padding-right: 10px;
+    font-size: 24px;
+  }
+
+  input {
+    width: 28vw;
+    height: 35px;
+    margin-bottom: 40px;
+  }
+
+  button {
+    width: 30vw;
+    height: 50px;
+    margin-bottom: 70px;
+  }
+
+  button:hover {
+    width: 30vw;
+    height: 50px;
+    margin-bottom: 70px;
+  }
+
+  h1 {
+    font-size: 72px;
+    padding-top: 80px;
+    padding-bottom: 200px;
+  }
+
+  .parallelogram {
+    height: 90px;
+    line-height: 90px;
+  }
+
+  footer {
+    background-color: #744d99;
+    padding-top: 20px;
+  }
+}
+
+/*ipad mini*/
+@media only screen and (min-width: 768px) {
+  label {
+    display: inline-block;
+    margin: 0 auto;
+    padding-right: 10px;
+    font-size: 24px;
+  }
+
+  input {
+    width: 28vw;
+    height: 35px;
+    margin-bottom: 20px;
+  }
+
+  button {
+    width: 30vw;
+    height: 50px;
+    margin-bottom: 40px;
+  }
+
+  button:hover {
+    width: 30vw;
+    height: 50px;
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    font-size: 72px;
+    padding-top: 80px;
+    padding-bottom: 150px;
+  }
+
+  .parallelogram {
+    height: 90px;
+    line-height: 90px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  h1 {
+    padding-bottom: 30px;
+  }
 }
