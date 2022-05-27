@@ -155,7 +155,7 @@ p {
 }
 
 /*iphone SE*/
-@media only screen and (min-width: 375px) {
+@media screen and (min-width: 375px) {
   label {
     margin-left: 85px;
     font-size: 20px;
@@ -172,7 +172,7 @@ p {
 }
 
 /*samsung galazy s8+*/
-@media only screen and (min-width: 360px) {
+@media screen and (min-width: 360px) {
   label {
     margin-left: 85px;
     font-size: 14px;
@@ -190,7 +190,7 @@ p {
 }
 
 /*ipad air*/
-@media only screen and (min-width: 820px) {
+@media screen and (min-width: 820px) {
   label {
     display: inline-block;
     margin: 0 auto;
@@ -234,7 +234,7 @@ p {
 }
 
 /*ipad mini*/
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   label {
     display: inline-block;
     margin: 0 auto;
@@ -272,7 +272,7 @@ p {
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
   h1 {
     padding-bottom: 30px;
   }
